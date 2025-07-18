@@ -140,7 +140,7 @@ public class HtmlToPdfV2
         // String htmlTotalPay = htmlTemplateData[1];
         // String htmlTotalTax = htmlTemplateData[2];
 
-        String[] htmlTemplateData = jsonProcessor("p9_data.json");
+        String[] htmlTemplateData = jsonProcessor("assets/p9_data.json");
         String employerName = htmlTemplateData[0];
         String employerPin = htmlTemplateData[1];
         String employeeMainName = htmlTemplateData[2];
