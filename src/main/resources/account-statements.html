@@ -1,10 +1,263 @@
-<!--<!DOCTYPE html>-->
-<!DOCTYPE definition [<!ENTITY amp "&#38;">]>
-<html lang="en">
-<head>
-    <title>Account Statements</title>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Ukulima Sacco Financial Statment</title>
 
-</body>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            header {
+                width: 100%;
+                padding: 0 0 7px 0;
+                border-bottom: 2.5px solid rgb(50, 205, 50);
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            /* .letter-head-container tr {
+                width: 49%;
+            } */
+            
+
+            .ukulima-logo {
+                width: 49%;
+            }
+
+            .name-date-section {
+                width: 49%;
+                text-align: right;
+                font-weight: 400;
+                padding: 10px;
+            }
+
+            .account-holder-details {
+                text-align: left;
+                vertical-align: top;
+            }
+
+            .ukulima-sacco-contact {
+                vertical-align: top;
+            }
+
+            .ukulima-sacco-contact p {
+                padding: 0 0  0 40px;
+            }
+
+            .ukulima-sacco-contact a {
+                color: black;
+                text-decoration: none;
+                
+            }
+
+            .transaction-amounts-summary {
+                text-align: right;
+                padding: 5px;
+            }
+
+            img {
+                width: 240px;
+                padding: 0 0 15px 0;
+            }
+
+            span {
+                font-weight: 600;
+            }
+
+            caption {
+                text-align: left;
+                font-weight: bold;
+                border-bottom: 2.5px solid rgb(50, 205, 50);
+                padding: 0 0 10px 0;
+            }
+
+            main {
+                padding: 10px 0 0 0;
+            }
+
+            th {
+                border: 1.5px solid rgb(212, 216, 221);
+                background-color: rgb(50, 205, 50);
+                color: white;
+                margin: 0;
+            }
+
+            .transactions-data {
+                background-color: rgb(255, 233, 237);
+            }
+
+            .transactions-data td {
+                border: 1.5px solid rgb(212, 216, 221);
+                font-size: 12px;
+                padding: 5px;
+            }
+
+            .credits {
+                background-color: rgb(235, 250, 235);
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <table>
+                <tbody class="letter-head-container" style="width: 100%;">
+                    <tr class="letter-head">
+                        <td class="ukulima-logo" rowspan="2">
+                            <img src="http://localhost:5500/html-foundation/pdf-builder/assets/ukulima-sacco-logo.png" alt="Ukulima sacco logo" />
+                        </td>
+                        <td class="name-date-section">
+                            UKULIMA SACCO   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name-date-section">Date Issued: 3 June 2022</td>
+                    </tr>
+
+                    <tr style="width: 100%">
+                        <td style="border-bottom: 3.5px solid rgb(50, 205, 50)"></td>
+                        <td style="border-bottom: 3.5px solid rgb(50, 205, 50)"></td>
+                    </tr>
+
+                    <tr style="border-collapse: separate; border-spacing: 10px;">
+                        <td class="account-holder-details">
+                            <p style="font-weight: 600;">Mr. John Juma</p>
+                            <p>+254722368794</p>
+                            <p style="font-weight: 600;">7 Jan 2022 to 2 June 2022</p>
+                            
+                            <div>
+                                <table>
+                                    <caption>FOSA Savings Account (5050123278000)</caption>
+                                    <tbody>
+                                        <tr>
+                                            <td>Opening Balance</td>
+                                            <td class="transaction-amounts-summary">25,012.49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Credits</td>
+                                            <td class="transaction-amounts-summary" style="color: rgb(50, 205, 50);;">1,336,895.23</td>
+                                        </tr>
+                                        <tr style="border-bottom: 2.5px solid rgb(50, 205, 50);">
+                                            <td>Debits</td>
+                                            <td class="transaction-amounts-summary" style="color: red;">1,276,787.86</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Closing Balance</td>
+                                            <td class="transaction-amounts-summary" style="font-weight: 600;">65,119.86</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+
+                        <td class="ukulima-sacco-contact">
+                            <p style="font-weight: 600;">Contact Information</p>
+                            <p><span>Email:</span><a href="mailto:info@ukulimasacco.coop">info@ukulimasacco.coop</a></p>
+                            <p><span>Website:</span><a href=""> https://ukulimasacco.coop</a></p>
+                            <p><span>Tel:</span> 0709943000</p>
+
+                            <p style="font-size: 14px;">Contact us for questions, on this statement, change <br /> of personal information, and general inquiries</p>
+                            <p style="font-size: 14px;">Mon - Fri: 8:30am - 5:00 PM</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </header>
+
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Doc No</th>
+                        <th>Description</th>
+                        <th>Credit</th>
+                        <th>Debit</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+
+                <tbody class="transactions-data">
+                    <tr class="credits">
+                        <td>7 Jan 2022</td>
+                        <td>QA749QPFRM</td>
+                        <td> Loan Repayment</td>
+                        <td>20,000.00</td>
+                        <td></td>
+                        <td>25,012.49</td>
+                    </tr>
+
+                    <tr>
+                        <td>7 Jan 2022</td>
+                        <td>QA749QPFRM</td>
+                        <td> Loan Repayment Fee </td>
+                        <td></td>
+                        <td>5.00</td>
+                        <td>25,007.49</td>
+                    </tr>
+
+                    <tr>
+                        <td>7 Jan 2022</td>
+                        <td>QA749QPFRM</td>
+                        <td> Loan Repayment</td>
+                        <td></td>
+                        <td>20,000.00</td>
+                        <td>5,007.49</td>
+                    </tr>
+
+                    <tr class="credits">
+                        <td>7 Jan 2022</td>
+                        <td>SPV0000175 </td>
+                        <td>PROJECTS &amp; PRODUCT DELIVERY <br /> STAFF ALLOWANCE</td>
+                        <td>35,000.00</td>
+                        <td></td>
+                        <td>40,007.49</td>
+                    </tr>
+
+                    <tr>
+                        <td>7 Jan 2022</td>
+                        <td>SPV0000175 </td>
+                        <td>WIthholding Tax-PROJECTS &amp; PRODUCT <br /> DELIVERY STAFF</td>
+                        <td></td>
+                        <td>7,500.00</td>
+                        <td>32,507.49</td>
+                    </tr>
+
+                    <tr>
+                        <td>7 Jan 2022</td>
+                        <td>SPV0000175 </td>
+                        <td>Allowances Processing Fee</td>
+                        <td></td>
+                        <td>200.00</td>
+                        <td>32,307.49</td>
+                    </tr>
+
+                    <tr>
+                        <td>7 Jan 2022</td>
+                        <td>SPV0000175 </td>
+                        <td>Allowances Processing FeeExcise Duty</td>
+                        <td></td>
+                        <td>40.00</td>
+                        <td>32,267.49</td>
+                    </tr>
+
+                    <tr>
+                        <td>7 Jan 2022</td>
+                        <td>ZYCU1U7</td>
+                        <td>Balance Enquiry: 5050123278000</td>
+                        <td></td>
+                        <td>23.00</td>
+                        <td>32,244.49</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
 </html>
