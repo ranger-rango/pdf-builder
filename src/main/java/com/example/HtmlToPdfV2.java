@@ -134,7 +134,7 @@ public class HtmlToPdfV2
 
     public static void main(String[] args) throws IOException, Exception
     {
-        String kraHtmlTemplate = templateReader("/front-end/html-foundation/pdfs-from-html/kra-pdf-template-v2.html");
+        String kraHtmlTemplate = templateReader("src/main/resources/p-nine-report-v2.html");
         // String[] htmlTemplateData = csvProcessor("html_data.csv");
         // String htmlData = htmlTemplateData[0];
         // String htmlTotalPay = htmlTemplateData[1];
@@ -161,7 +161,7 @@ public class HtmlToPdfV2
 
         // System.out.println(filledHtml);
 
-        createPdf(filledHtml, "Kra_P9_v2.pdf");
+        createPdf(filledHtml, "Sample BNG P9 Report V2.pdf");
 
         
 
